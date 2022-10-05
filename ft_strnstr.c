@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/02 17:55:20 by emohamed           #+#    #+#             */
-/*   Updated: 2022/10/03 12:43:07 by emohamed         ###   ########.fr       */
+/*   Created: 2022/10/02 17:55:20 by emohamed          #+#    #+#             */
+/*   Updated: 2022/10/04 16:31:06 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	{
 		if (haystack[i] == needle[j])
 		{
-			while (needle[j] && haystack[j + i] == needle[j])
+			while (i + j < len && needle[j] && haystack[j + i] == needle[j])
 				j++;
 			if (j == ft_strlen(needle))
 				return ((char *)(haystack + i));
