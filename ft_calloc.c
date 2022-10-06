@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   calloc.c                                           :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 09:55:07 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/05 09:56:22 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/05 13:17:07 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void * calloc(size_t count , size_t size)
-{
 
-    
-}
+void *ft_calloc(size_t count , size_t size)
+{
+    size_t  s ;
+    void *ptr;
+     
+    s = count * size;
+    ptr = malloc(s);
+    if(!ptr)
+        return (NULL);
+    ft_memset(ptr,0,s);
+    return (ptr);     
+} 
