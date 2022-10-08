@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 17:21:06 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/06 15:26:30 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/08 15:37:37 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char    *ft_strdup(const char *s);
 char    *ft_substr(char const *s, unsigned int start,size_t len);
 char    *ft_strjoin(char const *s1, char const *s2);
+char    *ft_strtrim(char const *s1, char const *set);
+char    *ft_strtrim(char const *s1, char const *set);
+char    *ft_itoa(int n);
+char* ft_strmapi(char const* s, char (*f)(unsigned int, char));
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, void const *src, size_t n);
