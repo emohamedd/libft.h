@@ -6,9 +6,11 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 10:02:07 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 14:55:18 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/10 12:33:24 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {

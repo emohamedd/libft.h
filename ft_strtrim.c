@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -6,30 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 22:06:50 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/06 22:06:51 by emohamed         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-
-#include "libft.h"
-
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/05 20:48:14 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/10 09:22:16 by ael-khni         ###   ########.fr       */
+/*   Created: 2022/10/10 12:08:05 by emohamed          #+#    #+#             */
+/*   Updated: 2022/10/10 12:08:21 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
- int	incrim(char const c, char const *set)
+int	incrim(char const c, char const *set)
 {
 	int	i;
 
@@ -45,8 +29,8 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int		front;
-	int		back;
+	int front;
+	int back;
 
 	if (!s1)
 		return (NULL);
