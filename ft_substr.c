@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:07:00 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/11 11:05:45 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/18 16:14:57 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,13 +37,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	str[y] = 0;
 	return (str);
-}
-#include <stdio.h>
-int main()
-{
-	char *x;
-	x = "Hasbanis";
-	
-printf("%s",ft_substr(x, 5, 10));
-return 0;	
 }
