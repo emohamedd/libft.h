@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 09:55:07 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/05 13:17:07 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/19 01:05:38 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t s;
-	void *ptr;
+	size_t	s;
+	void	*ptr;
 
 	s = count * size;
 	ptr = malloc(s);

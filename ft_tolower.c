@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:36:39 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 14:56:42 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:31:01 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+// int main()
+// {
+// 	char c = 'A';
+// 	printf("%c",ft_tolower(c));
+// }

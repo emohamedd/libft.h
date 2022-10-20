@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:08:05 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/10 12:08:21 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 14:25:25 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int	incrim(char const c, char const *set)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	int front;
-	int back;
+	int	front;
+	int	back;
 
 	if (!s1)
 		return (NULL);
@@ -42,3 +42,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		back--;
 	return (ft_substr(s1, front, (back - front + 1)));
 }
+
+// Description : ----> strtrim removes all whitespace characters from the beginning and the end of a string.
+// int main()
+// {
+// 	char s[] = "/    Hello Amine     /";
+// 	printf("%s",ft_strtrim(s," /"));
+// }

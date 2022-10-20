@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 17:55:20 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/06 15:55:02 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 15:35:37 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,11 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+// int main()
+// {
+// 	char hay[] = "smiti amine";
+// 	char need[] = "hlf blah";
+// 	size_t len = 5;
+// 	printf("%s",ft_strnstr(hay,need,len));
+	
+// }

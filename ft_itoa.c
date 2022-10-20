@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 20:09:43 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/11 11:30:00 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/19 15:44:48 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	nbrlen(int n)
 {
 	int	cnt;
-	
+
 	cnt = 0;
 	if (n <= 0)
 		cnt++;
@@ -26,19 +26,18 @@ int	nbrlen(int n)
 	}
 	return (cnt);
 }
+
 char	*ft_itoa(int n)
 {
-	int i;
-	int size;
-	char *str;
-	long int  x ;
-	x = (long int )n;
-	size = nbrlen(x);
-	i = size - 1;
-	str = malloc(sizeof(char) * (size + 1));
+	int			i;
+	char		*str;
+	long int	x;
+
+	x = (long int)n;
+	i = nbrlen(n) - 1;
+	str = malloc(sizeof(char) * (nbrlen(n) + 1));
 	if (!str)
 		return (0);
-
 	if (x == 0)
 		str[0] = x + 48;
 	if (x < 0)
@@ -52,6 +51,6 @@ char	*ft_itoa(int n)
 		x = x / 10;
 		i--;
 	}
-	str[size] = '\0';
+	str[nbrlen(n)] = '\0';
 	return (str);
 }

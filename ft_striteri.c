@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,21 +6,20 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 10:58:16 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/13 10:58:21 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/19 01:32:52 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
-{ 
-int i;
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	int	i;
 
-i = 0;
-if (s && f)
-    while(s[i])
-    {
-        f(i,&s[i]);
-        i++;   
-    }
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

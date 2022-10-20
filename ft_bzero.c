@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 12:41:13 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 12:41:51 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 00:32:00 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);
 }
+// int main()
+// {	
+// 	char str[] = "Am";
+// 	ft_bzero(str,2);
+// 	printf("%s",str);
+// }

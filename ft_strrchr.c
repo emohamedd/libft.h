@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 12:47:08 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 12:47:27 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 15:30:29 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,10 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+
+// int main()
+// {
+// 	char s[] = "Ana smiti amine ";
+// 	char c = 's';
+// 	printf("%s",ft_strrchr(s,c));
+// }

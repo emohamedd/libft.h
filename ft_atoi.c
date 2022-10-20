@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/02 21:31:01 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/04 19:20:03 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:11:45 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 int	aminepape(char *str, int *ptr_i)
 {
-	int	count;
-	int	i;
+	long	count;
+	int		i;
 
 	i = 0;
 	count = 1;
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
-	while (str[i] && (str[i] == 43 || str[i] == 45))
+	if (str[i] && (str[i] == '-' || str[i] == '+'))
 	{
-		if (str[i] == 45)
+		if (str[i] == '-')
 			count *= -1;
 		i++;
 	}
@@ -33,9 +33,9 @@ int	aminepape(char *str, int *ptr_i)
 
 int	ft_atoi(char *str)
 {
-	int	sign;
-	int	result;
-	int	i;
+	long	sign;
+	long	result;
+	int		i;
 
 	result = 0;
 	sign = aminepape(str, &i);
@@ -48,3 +48,9 @@ int	ft_atoi(char *str)
 	result *= sign;
 	return (result);
 }
+// int main()
+// {
+// 	char str[]="99";
+// 	printf(" original atoi is -------> : %d\n", atoi(str));
+// 	printf("my atoi is -------> : %d", ft_atoi(str));
+// }

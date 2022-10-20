@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:26:56 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 14:54:24 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:23:29 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,8 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
+// int main()
+// {
+// 	char c = 'a';
+// 	printf("%c",ft_toupper(c));
+// }

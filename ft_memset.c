@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 18:57:30 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/04 16:59:29 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/20 01:29:18 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,16 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+// int main()
+// {
+// 	int i = 0;
+// 	int	tab[5]={18,45,12,16,66};
+// 	int c = 45;
+// 	char	*s;
+// 	s = ft_memset(tab, c, 3);
+// 	while (i < 5)
+// 	{
+// 		printf("%d ", s[i++]);
+// 	}
+	
+// }
