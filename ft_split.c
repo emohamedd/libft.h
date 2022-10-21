@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:47:46 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/19 17:03:03 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 16:34:43 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,15 +69,9 @@ char	**ft_split(char *s, char c)
 	ptr[j] = NULL;
 	return (ptr);
 }
-/* int main()
-{
-	char x[] = "ANA smiti amine ";
-	char **words = ft_split(x, ' ');
-	int  i = 0;
-	while(words[i])
-	{
-		printf("%s\n", words[i]);
-		i++;
-	}
-}
-*/
+// int main()
+// {
+// 	char s[] = "Hello Media";
+// 	char c = 5;
+// 	printf("%d",ft)
+// }

@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:08:05 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/20 14:25:25 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 09:53:45 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, front, (back - front + 1)));
 }
 
-// Description : ----> strtrim removes all whitespace characters from the beginning and the end of a string.
+//Description : ----> 
+//remove ' ' from bgn and end
 // int main()
 // {
 // 	char s[] = "/    Hello Amine     /";

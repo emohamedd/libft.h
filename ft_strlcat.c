@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 23:46:16 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/06 13:08:28 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 14:35:59 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	lendest = x;
 	selen = ft_strlen(src);
 	if (size <= lendest)
-		return (selen + size);
+		return (selen + size );
 	while (src[i] && i < size - lendest - 1)
 	{
 		dest[x] = src[i];
@@ -40,3 +40,13 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	dest[x] = '\0';
 	return (lendest + selen);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+// 	char src[] = "Hello";
+// 	char dst[] = "World";
+// 	int size = 3;
+// 	printf("%zu\n",ft_strlcat(dst,src,size));
+// 	printf("%s",dst);
+// }

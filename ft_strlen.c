@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 13:05:36 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/03 14:54:38 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 14:32:08 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+#include <stdio.h>
+// int main()
+// {
+// 	char s[] = "Hello World !";
+// 	printf("%zu",ft_strlen(s));
+// }ffff

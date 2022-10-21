@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 12:56:00 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/20 17:02:12 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 15:31:37 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 // 	{
 // 	printf("%d ",dst[i]);
 // 	i++;
-	
 // 	}
 // }	

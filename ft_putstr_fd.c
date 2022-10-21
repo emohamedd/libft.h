@@ -6,7 +6,7 @@
 /*   By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 11:15:23 by emohamed          #+#    #+#             */
-/*   Updated: 2022/10/19 01:15:55 by emohamed         ###   ########.fr       */
+/*   Updated: 2022/10/21 10:06:20 by emohamed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	ft_putstr_fd(char *s, int fd)
 		}
 	}
 }
+
+// #include <fcntl.h>
+// int main()
+// {
+// 	int	fd;
+
+// 	fd = open("test.txt", O_CREAT | O_RDWR, 777);
+// 	write(fd,"TESTTESTTES",11);
+// }

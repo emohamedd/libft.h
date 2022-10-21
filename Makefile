@@ -6,7 +6,7 @@
 #    By: emohamed <emohamed@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/01 15:58:46 by emohamed          #+#    #+#              #
-#    Updated: 2022/10/19 17:17:40 by emohamed         ###   ########.fr        #
+#    Updated: 2022/10/21 10:11:32 by emohamed         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strle
 OBJS = $(SRCS:.c=.o)
 
 %.o : %.c
-	$(CC) $(CFLAGS) -c $^ -I.
+	$(CC) $(CFLAGS) -c $^
 	
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $^
@@ -35,7 +35,7 @@ $(NAME): $(OBJS)
 all: $(NAME)
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS) 
 
 fclean: clean
 	rm -f $(NAME)
